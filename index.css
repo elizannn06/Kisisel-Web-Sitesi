@@ -1,3 +1,41 @@
 div a:hover{
     background-color:#2f5389;
   }
+div > img{
+  object-fit: cover;
+}
+
+#demo {
+  width: 100%;
+  height: 80vh;         /* Ekran yüksekliğinin %50'si */
+  max-height: 500px;    /* Maksimum 500px ile sınırla */
+  margin: auto;
+}
+
+/* Carousel içeriği ve resimler */
+#demo .carousel-inner,
+#demo .carousel-item,
+#demo .carousel-item img {
+  height: 100%;
+}
+
+/* Görsel orantılı kırpılsın */
+#demo .carousel-item img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.musclass{
+  list-style-type: none;
+}
+
+.listclass{
+  li>a{
+    text-decoration: none;
+    color: #000;
+  }
+  li>a:hover{
+    color: #fff;
+    background-color: black;
+  }
+}
