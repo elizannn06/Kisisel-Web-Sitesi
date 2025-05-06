@@ -5,21 +5,42 @@ div > img{
   object-fit: cover;
 }
 
+body{
+  background-color: #fff;
+}
+
+.disclass{
+  color: #fff;
+}
+
+
+.bwc{
+  width: 200px;
+}
+.pwc{
+  width: 212px;
+}
+.gwc{
+  width: 200px;
+}
+.kwc{
+  width: 200px;
+}
+
+
 #demo {
   width: 100%;
-  height: 80vh;         /* Ekran yüksekliğinin %50'si */
-  max-height: 500px;    /* Maksimum 500px ile sınırla */
+  height: 80vh;        
+  max-height: 500px; 
   margin: auto;
 }
 
-/* Carousel içeriği ve resimler */
 #demo .carousel-inner,
 #demo .carousel-item,
 #demo .carousel-item img {
   height: 100%;
 }
 
-/* Görsel orantılı kırpılsın */
 #demo .carousel-item img {
   object-fit: cover;
   width: 100%;
