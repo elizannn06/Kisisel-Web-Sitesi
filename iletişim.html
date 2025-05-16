@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim Sayfası</title>
+    <link rel="stylesheet" href="css-js/iletişim.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+        <div class="container-fluid">
+          <span class="navbar-brand mb-0 h1 me-4" href="#">My Website</span>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item me-4">
+                <a class="nav-link active" aria-current="page" href="hakkımda.html">Hakkımda</a>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link active" aria-current="page" href="özgeçmiş.html">Cv</a>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link active" aria-current="page" href="ilgialanlarım.html">İlgi Alanlarım</a>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link active" aria-current="page" href="şehrim.html">Şehrim</a>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link active" aria-current="page" href="mirasımız.html">Mirasımız</a>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link active" aria-current="page" href="takımımız.html">Takımımız</a>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link active" aria-current="page" href="login.html">Login</a>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link active" aria-current="page" href="iletişim.html">İletişim</a>
+              </li>
+            </ul>
+          </div>
+        </div>  
+      </nav>
+
+<div class="formcont">
+      <form>
+        <table>
+            <tr>
+                <td>Adınız</td>
+            </tr>
+            <tr>
+              <td><input type="text" name="ad" placeholder="Adınız"></td>
+            </tr>
+
+            <tr>
+                <td>Soyadınız</td>
+            </tr>
+            <tr>
+              <td><input type="text" name="soyad" placeholder="Soyadınız"></td>
+            </tr>
+            <tr>
+                <td>Şifreniz</td>
+            </tr>
+            <tr>
+                <td><input type="password" name="sifre" placeholder="Şifreniz"></td>
+            </tr>
+            <tr>
+                <td>Telefon No</td>
+            </tr>
+            <tr>
+                <td><input type="tel" name="tel" id="" placeholder="Telefon Numaranız"></td>
+            </tr>
+            <tr>
+                <td>Cinsiyet</td>
+            </tr>
+            <tr>
+              <td colspan="2">Kadın<input type="radio" name="cinsiyet" value="1">
+              Erkek<input type="radio" name="cinsiyet" value="2"></td>
+            </tr>
+            <tr>
+                <td>Doğum Tarihiniz</td>
+            </tr>
+            <tr>
+              <td><input type="date" name="tarih" id=""></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+            </tr>
+            <tr>
+              <td><input type="email" name="mail" id="" placeholder="Emailiniz"></td>
+            </tr>
+            <tr>
+              <td>Yaşadığınız Şehir</td>
+            </tr>
+            <tr>
+              <td> 
+                <select name="sehir" id=""></select>
+                <option value="1" >Sakarya</option>
+                <option value="2">Ankara</option>
+                <option value="3">İstanbul</option>
+              </select>
+             </td>
+            </tr>
+          
+            <tr>
+              <td>
+              <select name="üniler" id="">
+                <option value="1" selected>lütfen üniversiteni seç</option>
+                <option value="2" >Sakarya Üniversitesi</option>
+                <option value="3">Yıldız Teknik Üniversitesi</option>
+                <option value="4">İstanbul Teknik Üniversitesi</option>
+              </select>
+              </td>
+            </tr>
+            
+            <tr>
+              <td><input type="reset" value="formu sıfırla"></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="formu gönder" ></td>
+            </tr>
+        </table>
+      
+     </div>
+  </form>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" 
+                integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+</body>
+</html>
