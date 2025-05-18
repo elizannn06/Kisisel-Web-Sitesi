@@ -13,7 +13,9 @@ body{
     justify-content: center;
     align-items: center;
 }
-
+div a:hover{
+    background-color:rgba(125, 82, 143, 0.8);
+}
 
 td{
     text-align: left;
