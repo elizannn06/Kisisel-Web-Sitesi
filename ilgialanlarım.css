@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  padding: 20px;
+  background-color: #f5f5f7 ;
+}
+
+a:hover{
+  background-color: #731e1e;
+}
+
+p{
+  text-align: center;
+}
+
+h1 {
+  margin-top: 50px; /* Navbar'dan daha fazla uzaklık */
+  text-align: center;
+  color: #333;
+}
+
+#film {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px; /* Elemanlar arası boşluk */
+}
+
+.movie {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column; /* Dikey düzen */
+  justify-content: space-between; /* Elemanları yay */
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 300px;
+  padding: 15px;
+  flex: 1 1 250px; /* Responsive genişlik */
+  min-height: 500px; /* Kartlar eşit yükseklikte olsun */
+}
+
+.movie h3 {
+  margin-top: 20px;
+  font-size: 1.1rem;
+  color: #222;
+}
+
+.movie:hover{
+  transform: scale(1.03);
+}
+
+.movie p {
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.movie img {
+  margin-top: auto; /* Resmi en alta iter */
+  width: 100%;
+  height: auto;
+  border-radius: 3px;
+}
+
