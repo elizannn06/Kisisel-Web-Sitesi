@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login sayfası</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="css-js/login.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+        <div class="container-fluid">
+          <span class="navbar-brand mb-0 h1 me-4" href="#">Elizan's Website</span>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item me-4">
+                <a class="nav-link active" aria-current="page" href="hakkımda.html">Hakkımda</a>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link active" aria-current="page" href="özgeçmiş.html">Cv</a>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link active" aria-current="page" href="ilgialanlarım.html">İlgi Alanlarım</a>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link active" aria-current="page" href="şehrim.html">Şehrim</a>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link active" aria-current="page" href="mirasımız.html">Mirasımız</a>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link active" aria-current="page" href="takımımız.html">Takımımız</a>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link active" aria-current="page" href="login.html">Login</a>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link active" aria-current="page" href="iletişim.html">İletişim</a>
+              </li>
+            </ul>
+          </div>
+        </div>  
+      </nav>
+
+<div class="formdes">
+      <form method="post" action="login.php">
+        <table>
+            <tr>
+                <td><h1>Login</h1></td>
+            </tr>
+            <tr>
+                <td>Kullanıcı Adı</td>
+            </tr>
+            <tr>
+                <td><input type="text" name="user" required></td>
+            </tr>
+            <tr>
+                <td>Şifre</td>
+            </tr>
+            <tr>
+                <td><input type="password" name="pass" required></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Giriş Yap"></td>
+            </tr>
+        </table>
+      </form>
+</div>
+
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" 
+                integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+</body>
+</html>
