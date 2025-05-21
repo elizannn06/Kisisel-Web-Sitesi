@@ -10,16 +10,17 @@
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+  <!--navbar-->
+   <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
         <div class="container-fluid">
-          <span class="navbar-brand mb-0 h1 me-4" href="#">My Website</span>
+          <span class="navbar-brand mb-0 h1 me-4" >Elizan's Website</span>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item me-4">
-                <a class="nav-link active" aria-current="page" href="index.html">Hakkımda</a>
+                <a class="nav-link active" aria-current="page" href="hakkımda.html">Hakkımda</a>
               </li>
               <li class="nav-item me-4">
                 <a class="nav-link active" aria-current="page" href="özgeçmiş.html">Cv</a>
@@ -42,29 +43,29 @@
               <li class="nav-item me-4">
                 <a class="nav-link active" aria-current="page" href="iletişim.html">İletişim</a>
               </li>
-              
             </ul>
-            
           </div>
         </div>  
       </nav>
 
-<header> <br><br>
-  <img src="womanicon.png" alt="woman icon">
-  <h2>Elizan Baba</h2>
-  <p>Sakarya Üniversitesi Bilgisayar Mühendisliği Öğrencisi</p>
+      <!--header-->
+<header class="container mt-2">
+ 
+      <h2>Elizan Baba</h2>
+      <p>Sakarya Üniversitesi Bilgisayar Mühendisliği Öğrencisi</p>
+      <ul class="lia">
+  <li><a href="#ebcs">Eğitim Bilgileri</a></li>
+  <li><a href="#dbcs">Deneyim Bilgileri</a></li>
+  <li><a href="#ibcs">İletişim Bilgileri</a></li>
+    </ul>
+
 </header>
 
-<nav>
-    <a href="#">Eğitim Bilgileri  |</a>
-    <a href="#">Deneyim Bilgileri  |</a>
-    <a href="#">İletişim Bilgileri</a>
-</nav>
-
-<br>
+<!--main altında bölümler-->
 <main>
-    <section>
-        <h2>Eğitim Bilgileri</h2>
+    <section class="container mt-2">
+      <section>
+        <h2 id="ebcs">Eğitim Bilgileri</h2>
         <article>
             <p><b>Üniversite:</b> Sakarya Üniversitesi</p>
             <p><b>Bölüm:</b> Bilgisayar Mühendisliği</p>
@@ -73,14 +74,17 @@
 
         <article>
             <p><b>Lise:</b> Fatma-Mehmet Cadıl Fen Lisesi</p>
+            <p><b>Tür:</b> Fen Lisesi</p>
             <p><b>Yıl:</b> 2020 - 2024 </p>
         </article>
      </section>
+  </section>
 
+<section class="container mt-2">
     <section>
-        <h2>Deneyim Bilgileri</h2>
+        <h2 id="dbcs">Deneyim Bilgileri</h2>
         <article>
-            <h4>Teknik Donanımlar</h4>
+            <h5>Teknik Donanımlar</h5>
             <ul>
                 <li>C#</li>
                 <li>C++</li>
@@ -94,7 +98,7 @@
         </article>
 
         <article>
-            <h4>Uygun Pozisyonlar</h4>
+            <h5>Uygun Pozisyonlar</h5>
             <ul>
                 <li>Frontend Developer</li>
                 <li>Backend Developer</li>
@@ -112,7 +116,7 @@
         </article>
 
         <article>
-          <h4>Kişisel Beceriler</h4>
+          <h5>Kişisel Özellikler</h5>
           <ul>
               <li>Takım çalışmasına uyum sağlama</li>
               <li>İletişim becerisi</li>
@@ -122,23 +126,25 @@
           </ul>
       </article>
     </section>
+    </section>
 </main>
 
+<!--açılır footer-->
   <footer>
     <details>
-        <summary><h2>İletişim Bilgileri</h2></summary>
+        <summary><h2 id="ibcs">İletişim Bilgileri</h2></summary>
         <ul>
             <li>
-                Telefen Numarası: +90 552...
+                Telefon Numarası: +90 552...
+            </li>
+            <li class="lia">
+                Github Hesabı:<a href="https://github.com/elizannn06" target="_blank">elizannn06</a>
             </li>
             <li>
-                Github Hesabı:<a href="https://github.com/">elizannn06</a>
-            </li>
-            <li>
-              Mail hesabı:blabla@gmail.com
+              Mail hesabı: blabla@gmail.com
           </li>
           <li>
-            Adres:Sakarya/Türkiye
+            Adres: Sakarya/Türkiye
         </li>
         </ul>
     </details>

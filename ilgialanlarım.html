@@ -12,9 +12,10 @@
 </head>
 <body>
 
+  <!--navbar-->
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
         <div class="container-fluid">
-          <span class="navbar-brand mb-0 h1 me-4" href="#">My Website</span>
+          <span class="navbar-brand mb-0 h1 me-4">Elizan's Website</span>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -49,18 +50,15 @@
             
           </div>
         </div>  
-      </nav><br><br><br>
+      </nav>
 
-
-<p>Bu sayfada sizlere ilgi alanlarımı api kullanarak yansıtmaya çalışacağım</p>
 <h1> Bu Haftanın Popüler Filmleri</h1>
-  <div id="film"></div> <!-- Filmler burada listelenecek -->
+  <div id="film"><!--filmler burada--></div>
 
   <script>
-    // TMDb API Anahtarınızı buraya ekleyin
-    const apiKey = "f2dd8a06deac85a3f1a487e3f959ff26";  // Kendi API anahtarınız buraya yazın
+  
+    const apiKey = "f2dd8a06deac85a3f1a487e3f959ff26";
 
-    // TMDb API URL'si (bu haftanın popüler filmleri)
     const url = `https://api.themoviedb.org/3/trending/movie/week?api_key=${apiKey}&language=tr-TR`;
 
    fetch(url)
@@ -81,7 +79,7 @@
           <h3>${movie.title}</h3>
           <p>${movie.overview}</p>
           <p><strong>Çıkış Tarihi:</strong> ${movie.release_date}</p>
-          <p><strong>Puan:</strong> ${movie.vote_average}</p> <!-- Puanı ekledik -->
+          <p><strong>Puan:</strong> ${movie.vote_average}</p>
           <img src="https://image.tmdb.org/t/p/w500${movie.poster_path}" alt="${movie.title}" />
         `;
         movieList.appendChild(movieElement);

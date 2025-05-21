@@ -6,9 +6,9 @@ form{
 }
 
 .formdes{
-    background: rgba(255, 255, 255, 0.3); /* Hafif şeffaf arka plan */
-      backdrop-filter: blur(3px); /*flu background görüntüsü */
-      border: 3px solid rgba(125, 82, 143, 0.8); /* çerçeve */
+    background: rgba(255, 255, 255, 0.3); 
+      backdrop-filter: blur(3px);
+      border: 3px solid rgba(125, 82, 143, 0.8);
       margin-top: 60px;
       border-radius: 15px;
       max-width:50vh;
@@ -31,7 +31,7 @@ td{
 }
 
 body{
-    background:url(../image/login2.jpg); /*backgrounda resim*/
+    background:url(../image/login2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -39,7 +39,7 @@ body{
     padding: 0;
     height: 100vh;
     position: relative;
-    background-attachment: fixed; /*taşma yapmasın*/
+    background-attachment: fixed;
 
     display: flex;
     justify-content: center;

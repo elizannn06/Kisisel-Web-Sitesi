@@ -1,5 +1,5 @@
 body{
-    background:url(../image/iletişim.jpg); /*backgrounda resim*/
+    background:url(../image/iletişim2.jpg); /*backgrounda resim*/
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -25,15 +25,15 @@ td{
 
 /*flu olan yer yani div*/
 .formcont{
-      background: rgba(255, 255, 255, 0.3); /* Hafif şeffaf arka plan */
+      background: rgba(255, 255, 255, 0.3);
       backdrop-filter: blur(10px); /*flu background görüntüsü */
       border: 3px solid rgba(125, 82, 143, 0.8); /* çerçeve */
       padding: 30px;
       margin-top: 70px;
       border-radius: 15px;
-      max-width:75vh;
-      width: 100%;
-      height: 80vh;
+      max-width:50vh;
+      width: 70%;
+      height: 75vh;
       box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
       overflow-y: auto;
       scrollbar-width: none;
@@ -41,6 +41,7 @@ td{
 
 
 table{
+    table-layout: fixed;
     margin:auto;
     color: black;
     margin-top:10px;
