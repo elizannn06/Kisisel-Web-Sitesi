@@ -1,0 +1,32 @@
+h2{
+    margin-top: 60px;
+}
+
+div a:hover{
+    background-color: #e5e559;
+}
+
+
+.col-sm-12{
+    margin-top: 50px;
+}
+
+.col-sm-2>a>img{
+    margin-top: 50px;
+    width: 150px;
+    height: auto;
+    object-fit: cover;
+}
+
+.col-sm-12>ul>li>a{
+    color: #252a83;
+}
+
+body{
+    background-color: #e5e559;
+}
+
+a{
+    text-decoration: none;
+    color: #252a83;
+}
