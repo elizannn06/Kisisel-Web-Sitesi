@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim Sayfası</title>
+    <link rel="stylesheet" href="css-js/iletisim.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+</head>
+<body>
+
+  <!--navbar-->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+        <div class="container-fluid">
+          <span class="navbar-brand mb-0 h1 me-4">Elizan's Website</span>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item me-4">
+                <a class="nav-link active" aria-current="page" href="index.html">Hakkımda</a>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link active" aria-current="page" href="ozgecmis.html">Cv</a>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link active" aria-current="page" href="ilgialanlarim.html">İlgi Alanlarım</a>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link active" aria-current="page" href="sehrim.html">Şehrim</a>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link active" aria-current="page" href="mirasimiz.html">Mirasımız</a>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link active" aria-current="page" href="takimimiz.html">Takımımız</a>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link active" aria-current="page" href="login.html">Login</a>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link active" aria-current="page" href="iletisim.html">İletişim</a>
+              </li>
+            </ul>
+          </div>
+        </div>  
+      </nav>
+
+      <!--form-->
+<div class="formcont" id="app">
+      <form name="formm" @submit.prevent="submitForm" onsubmit="kontrolformm()">
+        <table>
+            <tr>
+                <td>Adınız</td>
+            </tr>
+            <tr>
+              <td><input type="text" name="ad" id="ad" v-model="form.ad" placeholder="Adınız" value=""></td>
+            </tr>
+
+            <tr>
+                <td>Soyadınız</td>
+            </tr>
+            <tr>
+              <td><input type="text" name="soyad" id="soyad" v-model="form.soyad" placeholder="Soyadınız"  value=""></td>
+            </tr>
+            <tr>
+                <td>Şifreniz</td>
+            </tr>
+            <tr>
+                <td><input type="password" name="sifre" id="sifre" v-model="form.sifre" placeholder="Şifreniz" value=""></td>
+            </tr>
+            <tr>
+                <td>Telefon No</td>
+            </tr>
+            <tr>
+                <td><input type="tel" name="tel" id="tel" v-model="form.tel" placeholder="Telefon Numaranız"  value=""></td>
+            </tr>
+            <tr>
+                <td>Cinsiyet</td>
+            </tr>
+            <tr>
+              <td colspan="2">
+              Kadın<input type="radio" id="kadın" name="cinsiyet" v-model="form.cinsiyet" value="kadın">
+              Erkek<input type="radio" id="erkek" name="cinsiyet" v-model="form.cinsiyet" value="erkek">
+            </td>
+            </tr>
+            <tr>
+                <td>Doğum Tarihiniz</td>
+            </tr>
+            <tr>
+              <td><input type="date" name="date" v-model="form.date" id="" value=""></td>
+            </tr>
+            <tr>
+                <td>Saat</td>
+            </tr>
+            <tr>
+              <td><input type="time" name="time" v-model="form.time" id="time"  value=""></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+            </tr>
+            <tr>
+              <td><input type="email" name="email" v-model="form.email" placeholder="Emailiniz"  value=""></td>
+            </tr>
+            <tr>
+              <td>Yaşadığınız Şehir</td>
+            </tr>
+            <tr>
+              <td>
+                <select v-model="form.sehir" name="sehir" id="sehir" value="">
+                <option value="sakarya" selected>Sakarya</option>
+                <option value="bursa" >Bursa</option>
+                <option value="ankara">Ankara</option>
+                <option value="istanbul">İstanbul</option>
+                <option value="izmir">İzmir</option>
+              </select>
+              </td>
+            </tr>
+
+            <tr>
+              <td>Okuduğun Üniversite</td>
+            </tr>
+            <tr>
+              <td>
+                <select v-model="form.uni" name="uni" id="uni" value="">
+                <option value="saü" selected>Saü</option>
+                <option value="btü" >Btü</option>
+                <option value="aybü">Aybü</option>
+                <option value="itü">İtü</option>
+                <option value="deü">Deü</option>
+              </select>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                 <button type="button" @click="clearForm">Temizle</button>
+                 <button type="submit">Gönder</button>
+              </td>
+            </tr>
+
+        </table>
+      
+     </div>
+  </form>
+
+  
+</div>
+
+<!--normal js ile kontrol-->
+<script>
+   function kontrolformm(){
+            let a=document.forms["formm"]["ad"].value;
+            let b=document.forms["formm"]["soyad"].value;
+            let c=document.forms["formm"]["sifre"].value;
+            let d=document.forms["formm"]["tel"].value;
+            const telcont = /^\d{10}$/;
+            let e=document.forms["formm"]["cinsiyet"].value;
+            let f=document.forms["formm"]["date"].value;
+            let g=document.forms["formm"]["time"].value;
+            let h=document.forms["formm"]["email"].value;
+            let i=document.forms["formm"]["sehir"].value;
+            let j=document.forms["formm"]["uni"].value;
+
+
+            if(a==""){
+                alert("ad boş olamaz");
+                return false;
+            }
+
+            if(b==""){
+                alert("soyad boş olamaz");
+                return false;
+            }
+
+            if(c==""){
+                alert("şifre boş olamaz");
+                return false;
+            }
+
+            if(d==""){
+                alert("telefon boş olamaz");
+                return false;
+            }
+
+            if (!telcont.test(d)) {
+                alert("telefon numarası 10 haneli ve sadece rakamlardan oluşmalıdır.");
+                return;
+            }
+
+            if(e==""){
+                alert("cinsiyet boş olamaz");
+                return false;
+            }
+
+            if(f==""){
+                alert("tarih boş olamaz");
+                return false;
+            }
+
+            if(g==""){
+                alert("saat boş olamaz");
+                return false;
+            }
+
+            if(h==""){
+                alert("email boş olamaz");
+                return false;
+            }
+
+            if(i==""){
+                alert("şehir boş olamaz");
+                return false;
+            }
+
+            if(j==""){
+                alert("üniversite boş olamaz");
+                return false;
+            }
+        }
+</script>
+
+<!--vue ile kontrol-->
+<script>
+  new Vue({
+      el: '#app',
+      data: {
+        form: {
+          ad: '',
+          soyad: '',
+          sifre:'',
+          tel:'',
+          cinsiyet: '',
+          date: '',
+          time: '',
+          email: '',
+          sehir: '', 
+          uni: ''
+        },
+        formSubmitted: false
+      },
+      methods: {
+        submitForm() {
+          //boş alan kontrol
+          if (!this.form.ad || !this.form.soyad || !this.form.sifre || !this.form.tel||!this.form.cinsiyet
+            || !this.form.date|| !this.form.time|| !this.form.email|| !this.form.sehir|| !this.form.uni) {
+            alert("Lütfen tüm alanları doldurun.");
+            return;
+          }
+          //form gönderildiğinde 
+          const params = new URLSearchParams();
+          params.append('ad', this.form.ad);
+          params.append('soyad', this.form.soyad);
+          params.append('sifre', this.form.sifre);
+          params.append('tel', this.form.tel);
+          params.append('cinsiyet', this.form.cinsiyet);
+          params.append('date', this.form.date);
+          params.append('time', this.form.time);
+          params.append('email', this.form.email);
+          params.append('sehir', this.form.sehir);
+          params.append('uni', this.form.uni);
+          
+          //formsonuc.html'ye yönlendirme
+          const url = 'formsonuc.html?' + params.toString();
+          console.log("Yönlendirilmesi gereken URL: ", url);
+          window.location.href = url;
+        },
+        
+        clearForm() { 
+          this.form.ad = '';
+          this.form.soyad = '';
+          this.form.sifre = '';
+          this.form.tel = '';
+          this.form.cinsiyet = '';
+          this.form.date = '';
+          this.form.time = '';
+          this.form.email = '';
+          this.form.sehir = '';
+          this.form.uni = '';
+          this.formSubmitted = false;
+        }
+      }
+    });
+
+</script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" 
+                integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+</body>
+</html>

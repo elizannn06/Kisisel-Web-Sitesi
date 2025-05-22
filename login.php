@@ -14,14 +14,14 @@ if (isset($_POST["user"]) && isset($_POST["pass"])) {
         exit;
     }
 
-    if (substr($user, -17) !== '@sakarya.edu.tr') {
+    if (substr($user, -15) != '@sakarya.edu.tr') {
         echo "Sadece @sakarya.edu.tr uzantılı e-postalara izin verilmektedir";
         exit;
     }
 
     $expected_pass = explode('@', $user)[0];
 
-    if ($pass === $expected_pass) {
+    if ($pass == $expected_pass) {
         echo "Giriş başarılı. Hoşgeldiniz <strong>$pass</strong>";
     } else {
         echo "Şifre yanlış. Giriş başarısız";

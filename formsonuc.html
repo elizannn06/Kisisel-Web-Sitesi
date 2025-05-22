@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Sonuç Sayfası</title>
+</head>
+<body>
+    <h2>Form Sonuç</h2>
+  <div id="formData">
+
+    <!--sırasıyla girilen değerlerin yazdırılması-->
+    <p><strong>Ad:</strong> <span id="ad"></span></p>
+    <p><strong>Soyad:</strong> <span id="soyad"></span></p>
+    <p><strong>Şifre:</strong> <span id="sifre"></span></p>
+    <p><strong>Telefon:</strong> <span id="tel"></span></p>
+    <p><strong>Cinsiyet:</strong> <span id="cinsiyet"></span></p>
+    <p><strong>Tarih:</strong> <span id="date"></span></p>
+    <p><strong>Saat:</strong> <span id="time"></span></p>
+    <p><strong>Email:</strong> <span id="email"></span></p>
+    <p><strong>Şehir:</strong> <span id="sehir"></span></p>
+    <p><strong>Üniversite:</strong> <span id="uni"></span></p>
+
+  </div>
+
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    
+    //girilen değerleri atama
+    document.getElementById('ad').textContent = urlParams.get('ad');
+    document.getElementById('soyad').textContent = urlParams.get('soyad');
+    document.getElementById('sifre').textContent = urlParams.get('sifre');
+    document.getElementById('tel').textContent = urlParams.get('tel');
+    document.getElementById('cinsiyet').textContent = urlParams.get('cinsiyet');
+    document.getElementById('date').textContent = urlParams.get('date');
+    document.getElementById('time').textContent = urlParams.get('time');
+    document.getElementById('email').textContent = urlParams.get('email');
+    document.getElementById('sehir').textContent = urlParams.get('sehir');
+    document.getElementById('uni').textContent = urlParams.get('uni');
+    
+  </script>
+</body>
+</html>
